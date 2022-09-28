@@ -52,9 +52,9 @@ def get_roots(a, b, c):
         root1 = (-b - D**0.5) / (2 * a)
         root2 = (-b + D**0.5) / (2 * a)
 
-        if root1 > 0:
+        if root1 >= 0:
             preresult.append(root1)
-        if root2 > 0:
+        if root2 >= 0:
             preresult.append(root2)
 
     for root in preresult:
