@@ -70,6 +70,11 @@ def main():
     """
 
     a = get_coef(1, "Введите а: ")
+
+    if not a:
+        print("Это не биквадратное уравнение!")
+        return
+
     b = get_coef(2, "Введите b: ")
     c = get_coef(3, "Введите с: ")
 
